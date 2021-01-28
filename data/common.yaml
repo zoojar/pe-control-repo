@@ -1,3 +1,3 @@
 ---
-profile::base::ntp_server: "0.uk.pool.ntp.org"
 profile::motd::content: "hello, im not sure what dc you are in."
+profile::ntp::servers: [ 'ntp1.corp.com', 'ntp2.corp.com' ]
