@@ -1,3 +1,3 @@
 ---
-profile::motd::content: "hello, im not sure what dc you are in."
+profile::motd::content: "This machine is: %{facts.networking.fqdn}"
 profile::ntp::servers: [ 'ntp1.corp.com', 'ntp2.corp.com' ]
