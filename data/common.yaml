@@ -1,2 +1,2 @@
 ---
-message: "This node is using common data"
+profile::base::ntp_server: "0.uk.pool.ntp.org"
