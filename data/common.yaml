@@ -1,3 +1,4 @@
 ---
 profile::motd::content: "This machine is: %{facts.networking.fqdn}"
 profile::ntp::servers: [ 'ntp1.corp.com', 'ntp2.corp.com' ]
+profile::internal_app::version: "1.0"
