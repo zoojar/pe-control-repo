@@ -25,11 +25,6 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  # do we have a trusted fact? if so, use that first (secure)
-  if $trusted['extensions']['pp_role'] =~ /\w+/ {
-    include "role::${trusted['extensions']['pp_role']}"
-  } else {
-    # otherwise fallback to a plain fact (usually an external fact [on disk])
-    include "role::${facts['role']}"
-  }
+  $role = lookup('role')
+  include "role::${role}"
 }
