@@ -1,2 +1,4 @@
 ---
 profile::base::ntp_server: "0.europe.pool.ntp.org"
+profile::base::motd_content: "hello, you're in the eu dc"
+
