@@ -25,5 +25,7 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-
+  unless "${trusted['extensions']['pp_role']}".empty {
+    include "role::${trusted['extensions']['pp_role']}"
+  }
 }
