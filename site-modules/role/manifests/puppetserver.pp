@@ -1,4 +1,4 @@
 # puppetserver
-class puppetserver {
+class role::puppetserver {
 
 }
