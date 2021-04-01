@@ -14,5 +14,7 @@ class profile::security_baseline (
       'period' => hourly,
       'repeat' => 100,
     }
-  } 
+  }
+  include profile::firewall::main
+  
 }
