@@ -16,5 +16,10 @@ class profile::security_baseline (
     }
   }
   include profile::firewall::main
-  
+  firewall { '009 Allow inbound SSH (v4)':
+    dport    => 22,
+    proto    => 'tcp',
+    action   => 'accept',
+    provider => 'ip4tables',
+  }
 }
