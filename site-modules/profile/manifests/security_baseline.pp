@@ -1,6 +1,6 @@
 # security baseline profile
 class profile::security_baseline (
-  Array[String] $time_servers = ['tick.usno.navy.mil', 'tock.usno.navy.mil'],
+  Array[String] $time_servers = ['0.uk.pool.ntp.org', '1.uk.pool.ntp.org'],
   String        $profile_type = 'server' ,
   Array[String] $remote_access_allowed_users = ['vagrant'],
 ) {
