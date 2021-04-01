@@ -4,5 +4,4 @@ class profile::firewall::main {
     before  => Class['profile::firewall::post'],
     require => Class['profile::firewall::pre'], 
   }
-  class { 'firewall': }
 }
