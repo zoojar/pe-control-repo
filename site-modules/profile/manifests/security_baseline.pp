@@ -20,6 +20,6 @@ class profile::security_baseline (
     dport    => 22,
     proto    => 'tcp',
     action   => 'accept',
-    provider => 'ip4tables',
+    provider => 'iptables',
   }
 }
