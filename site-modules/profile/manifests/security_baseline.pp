@@ -6,9 +6,13 @@ class profile::security_baseline (
   Array[String] $host_allow_rules, 
 ) {
   class { '::secure_linux_cis':
-    time_servers     => $time_servers,
-    profile_type     => $profile_type,
-    allow_users      => $remote_access_allowed_users,
-    host_allow_rules => $host_allow_rules,
+    time_servers       => $time_servers,
+    profile_type       => $profile_type,
+    allow_users        => $remote_access_allowed_users,
+    host_allow_rules   => $host_allow_rules,
+    hardening_schedule => { 
+      'period' => hourly,
+      'repeat' => 10,
+    }
   } 
 }
