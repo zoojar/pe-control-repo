@@ -1,8 +1,2 @@
 ---
-profile::motd::content: "This machine is: %{facts.networking.fqdn}"
-profile::ntp::servers: [ 'ntp1.corp.com', 'ntp2.corp.com' ]
-profile::internal_app::version: "1.0"
-profile::security_baseline::host_allow_rules:
-  - 'sshd: ALL'
-  - "ALL: %{facts.networking.network}/%{facts.networking.netmask}"
-
+profile::base::message: 'This node is using common data'
