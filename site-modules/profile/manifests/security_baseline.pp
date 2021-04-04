@@ -12,7 +12,7 @@ class profile::security_baseline (
     host_allow_rules   => $host_allow_rules,
     hardening_schedule => { 
       'period' => hourly,
-      'repeat' => 100,
+      'repeat' => 2,
     }
   }
   include profile::firewall::main
