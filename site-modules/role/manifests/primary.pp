@@ -5,4 +5,5 @@
 # @example
 #   include role::primary
 class role::primary {
+  include puppet_operational_dashboards::enterprise_infrastructure
 }

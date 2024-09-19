@@ -5,4 +5,5 @@
 # @example
 #   include role::compiler
 class role::compiler {
+  include puppet_operational_dashboards::enterprise_infrastructure
 }
