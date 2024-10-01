@@ -1,6 +1,8 @@
 forge 'https://forge.puppet.com'
 
-mod 'puppetlabs-puppet_operational_dashboards', '2.3.0'
+mod 'puppetlabs-puppet_operational_dashboards',
+  :git    => 'https://github.com/zoojar/puppet_operational_dashboards.git',
+  :branch => 'replace_toml_func'
 mod 'puppet-grafana', '13.2.0'
 mod 'puppet-archive', '7.1.0'
 mod 'puppet-telegraf', '5.4.0'

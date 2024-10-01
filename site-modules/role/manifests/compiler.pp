@@ -5,4 +5,7 @@
 # @example
 #   include role::compiler
 class role::compiler {
+  class { 'puppet_operational_dashboards::enterprise_infrastructure':
+    template_format => 'yaml',
+  }
 }
