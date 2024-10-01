@@ -25,7 +25,13 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  if $trusted['extensions']['pp_role'] {
+  if $trusted['extensions']['1.3.6.1.4.1.34380.1.1.9812'] == 'puppet/server' {
+    include role::primary
+  }
+  elsif $trusted['extensions']['pp_auth_role'] == 'pe_compiler' {
+    include role::compiler
+  }
+  elsif $trusted['extensions']['pp_role'] {
     include "role::${trusted['extensions']['pp_role']}"
   }
 }
