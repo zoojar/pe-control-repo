@@ -16,6 +16,10 @@ class profile::puppet_operational_dashboards (
     'GF_AUTH_ANONYMOUS_ORG_NAME' => 'Main Org.',
   }
 ) {
+  file { '/var/test':
+    ensure  => file,
+    content => 'test',
+  }
   class { 'puppet_operational_dashboards':
     template_format => 'yaml',
   }
