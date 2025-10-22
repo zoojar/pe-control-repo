@@ -1,4 +1,2 @@
 # An example profile
-class profile::example {
-
-}
+class profile::example {}
