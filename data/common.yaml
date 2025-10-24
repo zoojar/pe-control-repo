@@ -1,3 +1,3 @@
 ---
-puppet_operational_dashboards::profile::dashboards::grafana_port: 443
+#puppet_operational_dashboards::profile::dashboards::grafana_port: 443
 puppet_operational_dashboards::profile::dashboards::grafana_use_ssl: true
