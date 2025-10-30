@@ -3,7 +3,7 @@
   "values": {
     "aio_agent_version": "6.19.1",
     "architecture": "x86_64",
-    "somefact": "value",
+    "app_tier": "web",
     "augeas": {
       "version": "1.12.0"
     },

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-
+require 'spec_helper_integration'
 
 describe 'role::example' do
   os_set = {
@@ -15,7 +15,6 @@ describe 'role::example' do
   }
   on_supported_os(os_set).each do |os, os_facts|
     context "on #{os}" do
-
       let(:facts) { os_facts } 
 
       it { is_expected.to contain_class('profile::example') }
